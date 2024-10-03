@@ -1,4 +1,4 @@
-package com.example.jannygaardrabbitmq.Service;
+package com.example.jannygaardrabbitmq.service;
 
 import com.example.jannygaardrabbitmq.entity.Car;
 import org.slf4j.Logger;

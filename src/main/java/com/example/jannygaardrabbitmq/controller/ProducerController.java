@@ -1,6 +1,6 @@
-package com.example.jannygaardrabbitmq.Controller;
+package com.example.jannygaardrabbitmq.controller;
 
-import com.example.jannygaardrabbitmq.Service.RabbitMQSender;
+import com.example.jannygaardrabbitmq.service.RabbitMQSender;
 import com.example.jannygaardrabbitmq.entity.Car;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
