@@ -22,12 +22,12 @@ public class RabbitMQSender {
     private String routingKeySp;
 
 
-    public void sendTd(Car car) {
-        rabbitTemplate.convertAndSend(exchangeName, routingKeyTd, car);
+    public void sendTd(int id) {
+        rabbitTemplate.convertAndSend(exchangeName, routingKeyTd, id);
     }
 
-    public void sendSp(Car car) {
-        rabbitTemplate.convertAndSend(exchangeName, routingKeySp, car);
+    public void sendSp(String message) {
+        rabbitTemplate.convertAndSend(exchangeName, routingKeySp, message);
     }
 
 }
