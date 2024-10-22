@@ -19,7 +19,7 @@ public class ProducerController {
     @PostMapping("/webhook/td/booking/create/{id}")
     public String td(@PathVariable int id) {
         rabbitMQSender.sendTd(id);
-        logger.info("RABBITMQ MESSAGE TO TD: ", id);
+        logger.info(String.valueOf(id));
         return "Sent to TD " + id;
     }
 
