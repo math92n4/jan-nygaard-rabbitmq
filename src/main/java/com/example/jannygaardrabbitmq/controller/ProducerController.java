@@ -19,8 +19,8 @@ public class ProducerController {
     }
 
     @PostMapping("/sp")
-    public String sp(@RequestBody String message) {
-        rabbitMQSender.sendSp(message);
-        return "Sent to SP " + message;
+    public String sp() {
+        rabbitMQSender.sendSp("Message to SP");
+        return "Sent to SP";
     }
 }
